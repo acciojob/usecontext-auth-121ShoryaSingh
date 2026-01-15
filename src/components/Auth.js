@@ -13,7 +13,7 @@ export default function Auth() {
       <h2>Click on the checkbox to get authenticated</h2>
 
       <div>
-        <label>
+        <label className="">
           <input
             type="checkbox"
             checked={isAuthenticated}
@@ -24,11 +24,11 @@ export default function Auth() {
       </div>
 
       {/* Conditional Rendering based on authentication status */}
-      <div>
+      <div className="authText">
         {isAuthenticated ? (
-          <div>You are authenticated, you can proceed</div>
+          <p>You are authenticated, you can proceed</p>
         ) : (
-          <div>You are not authenticated</div>
+          <p>You are not authenticated</p>
         )}
       </div>
     </div>
