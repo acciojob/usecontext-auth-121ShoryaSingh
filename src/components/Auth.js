@@ -26,9 +26,9 @@ export default function Auth() {
       {/* Conditional Rendering based on authentication status */}
       <div className="authText">
         {isAuthenticated ? (
-          <p>You are authenticated, you can proceed</p>
+          <p>You are now authenticated, you can proceed</p>
         ) : (
-          <p>You are not authenticated</p>
+          <p>you are not authenticated</p>
         )}
       </div>
     </div>
